@@ -1,0 +1,52 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="olympicsapp" >
+<head >
+	<title >Olympic Champions App</title >
+	<link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<link href="main.css" rel="stylesheet" >
+</head >
+
+<body >
+<nav class="navbar navbar-inverse navbar-fixed-top" >
+	<div class="container"  ng-controller="NavBarController">
+		<div class="navbar-header" >
+			<a class="navbar-brand"
+			   ng-click="goToList()" >Lists Of Olympic Champions
+			</a >
+		</div >
+		<ul class="nav navbar-nav navbar-right">
+			<!--<li>-->
+				<!--<a ng-click="goToList()">Champions list</a>-->
+			<!--</li>-->
+			<li>
+				<a ng-click="goToStatistics()">Statistics</a>
+			</li>
+		</ul>
+	</div >
+</nav >
+
+<div class="container main-content">
+
+	<div class="row" >
+
+
+		<div ui-view="mainview">
+		</div>
+
+	</div >
+
+
+</div >
+
+
+<script src="libs/angular/angular.min.js" ></script >
+<script src="libs/ui-router/release/angular-ui-router.min.js" ></script >
+<script src="libs/spin.js/spin.js" ></script >
+<script src="libs/angular-spinner/angular-spinner.min.js" ></script >
+<script src="libs/angular-chart.js/node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="libs/angular-chart.js/dist/angular-chart.min.js"></script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/underscore-min.js"></script>
+<script src="main.js" ></script >
+</body >
+</html >
